@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&amp;family=Playfair+Display:ital,wght@1,600&amp;display=swap" rel="stylesheet">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com/3.4.4"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -39,18 +41,12 @@
       font-weight: 600;
     }
   </style>
-
-  <!-- <style>
-      /* Custom font utilities */
-      .font-playfair { font-family: 'Playfair Display', serif !important; }
-    </style> -->
 </head>
 
 <body class="min-h-full ">
   <!-- Header -->
   <header class="absolute z-20 w-full text-white">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 md:px-10">
-      <!-- <a href="#" class="text-3xl font-semibold tracking-tight font-playfair bg-gradient-to-r from-[#e8c47a] via-[#f9e6b7] to-[#e8c47a] bg-clip-text text-transparent">Kimanthi &amp; Associates</a> -->
        <a href="#" class="text-2xl sm:text-3xl md:text-3xl lg:text-3xl font-semibold tracking-tight font-playfair">
           Kimanthi &amp; Associates
         </a>
@@ -81,7 +77,7 @@
       </button>
     </div>
     <!-- Mobile drawer -->
-    <div id="mobileMenu" class="fixed inset-y-0 right-0 w-64 translate-x-full bg-[#181e2b] p-8 shadow-lg transition-transform duration-300 md:hidden z-50">
+    <div id="mobileMenu" class="fixed inset-y-0 right-0 w-64 translate-x-full  p-8 shadow-lg transition-transform duration-300 md:hidden z-50" style="background: linear-gradient(120deg,#131a47 60%,#080e38 100%)">
       <button id="closeMenu" class="absolute right-4 top-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x w-5 h-5"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button>
       <nav class="mt-12 flex flex-col gap-4 text-lg">
         <a href="#" class="hover:text-[#e8c47a]">Home</a>
@@ -110,8 +106,8 @@
   <div class="relative mx-auto flex max-w-3xl flex-col items-center px-6 pt-24 text-center md:px-10">
       <!-- Title -->
       <h1 class="max-w-3xl sm:text-5xl md:text-6xl leading-tight fade-in fade-in-2 text-4xl font-semibold tracking-tight mr-auto ml-auto font-sans">
-        A <span class="bg-clip-text text-transparent font-playfair bg-gradient-to-r from-white to-[#60668B]" id="aura-emcanx0fx">premier law firm</span>
-          in Nairobi that offers <span class="bg-clip-text text-transparent font-playfair bg-gradient-to-r from-white to-[#60668B]" id="aura-emcanx0fx">diverse</span>
+        A <span class="bg-clip-text text-transparent font-playfair bg-gradient-to-r from-white to-[#60668B]">premier law firm</span>
+          in Nairobi that offers <span class="bg-clip-text text-transparent font-playfair bg-gradient-to-r from-white to-[#60668B]">diverse</span>
            legal services
       </h1>
       <p class="mt-6 max-w-2xl text-base sm:text-lg text-white/80 fade-in fade-in-3">
@@ -147,24 +143,22 @@
       <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row gap-20">
         
         <!-- Text Section -->
-        <div class="flex-1 max-w-xl stagger-fadein" id="aura-emcbpwm3p">
-          <p class="tracking-widest text-sm mb-6">[ ABOUT US ]</p>
+        <div class="flex-1 max-w-xl">
+          <p data-aos="fade-up" data-aos-delay="200"  class="tracking-widest text-sm mb-6">[ ABOUT US ]</p>
           
-          <h1 class="sm:text-3xl lg:text-4xl leading-tight text-2xl font-semibold tracking-tight">
+          <h2 data-aos="fade-up" data-aos-delay="500"  class="sm:text-3xl lg:text-4xl leading-tight text-2xl font-semibold tracking-tight">
             committed to providing <span class="italic font-playfair">personalized and effective</span> legal counsel
-          </h1>
+          </h2>
 
-          <p class="mt-8 text-lg">Kimanthi and Associates Advocates is a law firm established in 2005 by the senior partner, Musyoki Kimanthi. 
-            It is a Mid-sized law firm in Westlands, Nairobi with a team that prides itself in offering quality legal services to it’s clients.
-          </p>
-            <br>
-          <p class="text-lg">Our practice does encapsulate a vast array of legal services, but we particularly pride ourselves with matters related to Constitutional petitions, 
+          <p data-aos="fade-up" data-aos-delay="800" class="mt-8 text-lg">Kimanthi and Associates Advocates is a law firm established in 2005 by the senior partner, Musyoki Kimanthi. 
+            It is a Mid-sized law firm in Westlands, Nairobi with a team that prides itself in offering quality legal services to it’s clients.<br></br>
+            Our practice does encapsulate a vast array of legal services, but we particularly pride ourselves with matters related to Constitutional petitions, 
             personal injury claims, family law, conveyancing & real estate, commercial transactions, banking, and finance law.
           </p>
           
         </div>
 
-        <div class="flex-1 w-full fade-in max-w-md mx-auto">
+        <div data-aos="fade-up" data-aos-delay="200" class="flex-1 w-full fade-in max-w-md mx-auto">
           <div class="backdrop-glass rounded-2xl shadow-2xl overflow-hidden border border-indigo-700/20 relative">
             <img 
               src="assets/kimanthi.jpg" 
@@ -191,14 +185,14 @@
 
         <div class="max-w-7xl relative flex-1 mx-auto">
             <div class="text-center max-w-3xl mx-auto">
-              <p class="tracking-widest text-sm mb-6">[ OUR PRACTICE AREAS ]</p>
+              <p data-aos="fade-up" data-aos-delay="200" class="tracking-widest text-sm mb-6">[ OUR PRACTICE AREAS ]</p>
 
-              <h2 class="sm:text-3xl lg:text-4xl leading-tight text-2xl font-semibold tracking-tight mt-8">
+              <h2 data-aos="fade-up" data-aos-delay="500" class="sm:text-3xl lg:text-4xl leading-tight text-2xl font-semibold tracking-tight mt-8">
                 committed to providing <span class="italic font-playfair">personalized and effective</span> legal counsel
               </h2>
             </div>
             
-            <div class="grid grid-rows-3 gap-8 sm:grid-cols-2 lg:grid-cols-3 mt-10 px-4 sm:px-6 lg:px-8">
+            <div data-aos="fade-up" data-aos-delay="800" class="grid grid-rows-3 gap-8 sm:grid-cols-2 lg:grid-cols-3 mt-10 px-4 sm:px-6 lg:px-8">
               <!-- Glass Card Variant 1 -->
               <div class="bg-white/5 backdrop-blur-md flex flex-col rounded-xl px-7 py-10 transition duration-200 overflow-hidden border border-white/20 relative shadow-lg hover:shadow-2xl loading=" loading="lazy">
                 <h3 class="text-lg font-semibold mb-2 text-white tracking-tight">Constitutional Petitions</h3>
@@ -252,13 +246,13 @@
 
         <div class="max-w-7xl relative flex-1 mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 md:pt-24 lg:pt-32">
             <div class="text-center max-w-3xl mx-auto mb-6">
-              <p class="tracking-widest text-sm mb-6">[ PROCESS ]</p>
-              <h2 class="sm:text-3xl lg:text-4xl leading-tight text-2xl font-semibold tracking-tight">
+              <p data-aos="fade-up" data-aos-delay="200" class="tracking-widest text-sm mb-6">[ PROCESS ]</p>
+              <h2 data-aos="fade-up" data-aos-delay="500" class="sm:text-3xl lg:text-4xl leading-tight text-2xl font-semibold tracking-tight">
                 How It <span class="italic font-playfair">Works</span> 
               </h2>
             </div>
             
-            <div class="grid grid-rows-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 mt-10">
+            <div data-aos="fade-up" data-aos-delay="800" class="grid grid-rows-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 mt-10">
               <!-- Glass Card Variant 1 -->
               <div class="bg-white/30 backdrop-blur-md flex flex-col text-center rounded-xl px-7 py-10 transition overflow-hidden border border-white/20 relative shadow-lg">
                 <h3 class="text-4xl italic font-playfair font-semibold mb-4 text-white tracking-tight">01</h3>
@@ -287,14 +281,14 @@
   <section class="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 md:py-24 lg:py-32">
 
     <div class="text-center max-w-3xl mx-auto">
-      <p class="tracking-widest text-sm mb-6">[ NEWS AND INSIGHTS ]</p>
-      <h2 class="sm:text-3xl lg:text-4xl leading-tight text-2xl font-semibold tracking-tight mt-8">
+      <p data-aos="fade-up" data-aos-delay="200" class="tracking-widest text-sm mb-6">[ NEWS AND INSIGHTS ]</p>
+      <h2 data-aos="fade-up" data-aos-delay="500" class="sm:text-3xl lg:text-4xl leading-tight text-2xl font-semibold tracking-tight mt-8">
         committed to providing <span class="italic font-playfair">personalized and effective</span> legal counsel
       </h2>
     </div>
 
     <div class="mt-10">
-      <div class="grid grid-rows-2 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div data-aos="fade-up" data-aos-delay="800" class="grid grid-rows-2 gap-8 sm:grid-cols-2 lg:grid-cols-3">
 
         <!-- Card 1 -->
         <div class="group flex flex-col rounded-2xl shadow-sm ring-1 ring-gray-200 hover:ring-blue-500 hover:shadow-md transition duration-200 bg-white overflow-hidden fade-in-up fade-in-up-3">
@@ -467,12 +461,12 @@
       </div>
 
       <div class="relative mx-auto flex max-w-3xl flex-col items-center px-6 pt-24 pb-24 text-center md:px-10">
-        <p class="tracking-widest text-sm mb-6">[ CONTACT US ]</p>
-        <h1 class="sm:text-3xl lg:text-4xl leading-tight text-2xl font-semibold ">
+        <p data-aos="fade-up" data-aos-delay="200" class="tracking-widest text-sm mb-6">[ CONTACT US ]</p>
+        <h1 data-aos="fade-up" data-aos-delay="500" class="sm:text-3xl lg:text-4xl leading-tight text-2xl font-semibold ">
           We help solve <span class="bg-clip-text text-transparent font-playfair bg-gradient-to-r from-white to-[#60668B]" id="aura-emcanx0fx">your legal issues</span>
         </h1>
 
-        <p class="mt-6 max-w-2xl text-base sm:text-lg text-white/80 fade-in fade-in-3">With expertise in various fields, our team is ready to dedicate our resources to the needs of our clients.</p>
+        <p data-aos="fade-up" data-aos-delay="800" class="mt-6 max-w-2xl text-base sm:text-lg text-white/80 fade-in fade-in-3">With expertise in various fields, our team is ready to dedicate our resources to the needs of our clients.</p>
 
         <!-- Buttons -->
         <div class="mt-10 flex flex-col sm:flex-row gap-4 fade-in fade-in-4">
@@ -488,7 +482,7 @@
     <div class="max-w-7xl grid grid-cols-1 md:grid-cols-4 gap-y-16 gap-x-12 mr-auto ml-auto pt-10 pr-6 pl-6">
       <!-- Brand & Newsletter -->
       <div class="fade-in fade-in-stagger-1" style="opacity: 1; transform: none; filter: none;">
-        <h2 class="text-3xl font-semibold tracking-tight">Kimanthi &amp; Associates</h2>
+        <h2 data-aos="fade-up" data-aos-delay="200" class="text-3xl font-semibold tracking-tight">Kimanthi &amp; Associates</h2>
         <form class="mt-8">
           <div class="flex focus-outline transition-shadow bg-neutral-900 rounded-full pt-2 pr-4 pb-2 pl-4 items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" class="lucide lucide-mail w-5 h-5 text-gray-400"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
@@ -502,7 +496,7 @@
         </form>
       </div>
       <!-- Navigation -->
-      <div class="fade-in fade-in-stagger-2" style="opacity: 1; transform: none; filter: none;">
+      <div data-aos="fade-up" data-aos-delay="200" class="fade-in fade-in-stagger-2" style="opacity: 1; transform: none; filter: none;">
         <p class="text-xs tracking-[0.27em] text-gray-400 mb-6 uppercase">[ Navigation ]</p>
         <ul class="space-y-3 text-base font-medium">
           <li class=""><a href="#" class="hover:text-indigo-400 transition-colors duration-150">Home</a></li>
@@ -513,7 +507,7 @@
         </ul>
       </div>
       <!-- Useful Link -->
-      <div class="fade-in fade-in-stagger-3" style="opacity: 1; transform: none; filter: none;">
+      <div data-aos="fade-up" data-aos-delay="200" class="fade-in fade-in-stagger-3" style="opacity: 1; transform: none; filter: none;">
         <p class="uppercase text-xs text-gray-400 tracking-[0.27em] mb-6">[ USEFUL INFO ]</p>
         <ul class="space-y-3 text-base font-medium">
           <li class=""><a href="#" class="hover:text-indigo-400 transition-colors duration-150">Mon-Fri 8:30am - 5:00pm</a></li>
@@ -522,7 +516,7 @@
         </ul>
       </div>
       <!-- Contact -->
-      <div class="fade-in fade-in-stagger-4" style="opacity: 1; transform: none; filter: none;">
+      <div data-aos="fade-up" data-aos-delay="200" class="fade-in fade-in-stagger-4" style="opacity: 1; transform: none; filter: none;">
         <p class="text-xs tracking-[0.27em] text-gray-400 mb-6 uppercase">[ Contact Us ]</p>
         <ul class="space-y-3 text-base font-medium">
           <li class="">
@@ -545,10 +539,20 @@
       </div>
     </div>
     <div class="divider mt-16 mb-8 mx-auto max-w-6xl px-6"></div>
-    <div class="fade-in fade-in-stagger-4 text-xs text-gray-500 text-center pr-6 pl-6" style="opacity: 1; transform: none; filter: none;">
+    <div data-aos="fade-up" data-aos-delay="200" class="fade-in fade-in-stagger-4 text-xs text-gray-500 text-center pr-6 pl-6" style="opacity: 1; transform: none; filter: none;">
       © Kimanthi And Associates – Powered by NextHive Digital by Daniel Maina
     </div>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,       // Animation duration (in ms)
+      easing: 'ease-out',  // Animation style
+      once: true           // Only animate once (remove if you want it every scroll)
+    });
+  </script>
+
 
   <script src="https://unpkg.com/lucide@latest"></script>
 
